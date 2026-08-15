@@ -1,0 +1,5 @@
+# Generated extension bundle
+*.shell-extension.zip
+
+# Compiled GSettings schemas
+gs.schemas.compiled
