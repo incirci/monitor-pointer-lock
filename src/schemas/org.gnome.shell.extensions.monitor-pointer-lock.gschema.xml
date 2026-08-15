@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright 2026 Taner Incirci -->
+<schemalist>
+  <schema id="org.gnome.shell.extensions.monitor-pointer-lock"
+          path="/org/gnome/shell/extensions/monitor-pointer-lock/">
+    <key name="enabled" type="b">
+      <default>true</default>
+      <summary>Enable monitor pointer lock</summary>
+      <description>
+        Prevent pointer movement between monitors unless Ctrl is held while crossing a shared display edge.
+      </description>
+    </key>
+    <key name="edge-inset" type="i">
+      <range min="1" max="64"/>
+      <default>12</default>
+      <summary>Pointer barrier inset</summary>
+      <description>
+        Distance in logical pixels from a shared monitor edge where the pointer is held.
+      </description>
+    </key>
+    <key name="keep-pointer-visible" type="b">
+      <default>true</default>
+      <summary>Keep the pointer visible at outer edges</summary>
+      <description>
+        Keep the pointer inset from bottom and right physical desktop edges.
+      </description>
+    </key>
+  </schema>
+</schemalist>
